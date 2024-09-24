@@ -13,6 +13,14 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+//Generate default data
+using (var serviceScope = app.Services.CreateScope())
+{
+    var services = serviceScope.ServiceProvider;
+    var context = services.GetRequiredService<ExpenseContext>();
+    DataGenerator.Initialize(services);
+}
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
