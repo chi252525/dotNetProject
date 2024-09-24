@@ -1,5 +1,6 @@
 # dotNetProject
 
+# 第一個使用 github copilot 練習的專案
 
 dotnet new webapi -o ExpenseAPI
 
