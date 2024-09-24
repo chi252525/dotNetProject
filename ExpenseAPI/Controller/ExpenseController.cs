@@ -42,8 +42,15 @@ namespace ExpenseAPI.Controller
         }
 
         [HttpPost]
+        //q: 提供curl 呼叫的範例
+        //a: curl -X POST http://localhost:5000/api/expenses -H "Content-Type: application/json" -d '{"amount": 100, "description": "Office Supplies", "date": "2023-10-01T00:00:00"}'
+        // 如果Description 是午餐 ，要回傳 400 並且說明午餐不能報帳
         public ActionResult<Expense> Post(Expense expense)
         {
+            if (expense.Description == "午餐")
+            {
+                return BadRequest("午餐不能報帳");
+            }
             _context.Expenses.Add(expense);
             _context.SaveChanges();
             return CreatedAtAction(nameof(Get), new { id = expense.Id }, expense);
