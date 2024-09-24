@@ -32,3 +32,6 @@
 /workspaces/dotNetProject/ExpenseAPI/obj/Debug/net8.0/ExpenseAPI.pdb
 /workspaces/dotNetProject/ExpenseAPI/obj/Debug/net8.0/ExpenseAPI.genruntimeconfig.cache
 /workspaces/dotNetProject/ExpenseAPI/obj/Debug/net8.0/ref/ExpenseAPI.dll
+/workspaces/dotNetProject/ExpenseAPI/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.dll
+/workspaces/dotNetProject/ExpenseAPI/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/workspaces/dotNetProject/ExpenseAPI/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll
