@@ -3,6 +3,16 @@
 //這個 Controller 會使用ExpenseContext.cs 這個model來存取資料庫
 //api 的路徑是/api/expense
 
+/// <summary>
+/// 新增一筆Expense 資料
+/// </summary>
+/// <param name="expense">Expense 資料</param>
+/// <returns> 新增的Expense 資料<returns>
+/// <response code="400">午餐不能超過400</response>
+/// <remarks>
+/// Sample request
+/// 
+
 using System;   
 using System.Collections.Generic;
 
